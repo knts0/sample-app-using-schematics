@@ -23,7 +23,7 @@ export class <%= classify(name) %>Component implements OnInit {
   }
 
   onSubmit(): void {
-    this.<%= name %>Service.add(this.form.value)
+    this.<%= name %>Service.create(this.form.value)
   }
 
 }
