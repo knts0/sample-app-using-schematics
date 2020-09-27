@@ -12,7 +12,7 @@ export class UserComponent implements OnInit {
   form: FormGroup
 
   constructor(
-    private formService: UserService,
+    private userService: UserService,
     private fb: FormBuilder,
   ) { }
 
@@ -25,7 +25,7 @@ export class UserComponent implements OnInit {
   }
 
   onSubmit(): void {
-    this.formService.add(this.form.value)
+    this.userService.create(this.form.value)
   }
 
 }

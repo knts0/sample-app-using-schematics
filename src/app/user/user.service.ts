@@ -6,7 +6,7 @@ export class UserService {
   constructor(
   ) { }
 
-  add (data: any): void {
+  create (data: any): void {
     console.log('mock implementation')
   }
 }
