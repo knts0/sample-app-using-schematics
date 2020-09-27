@@ -1,0 +1,26 @@
+<form [formGroup]="form">
+  <div class="form-table">
+    <div class="form-table__row">
+      <div class="form-table__label">名前</div>
+      <div class="form-table__content">
+          <input formControlName="name" type = "text">
+      </div>
+    </div>
+    <div class="form-table__row">
+      <div class="form-table__label">住所</div>
+      <div class="form-table__content">
+          <input formControlName="address" type = "text">
+      </div>
+    </div>
+    <div class="form-table__row">
+      <div class="form-table__label">電話番号</div>
+      <div class="form-table__content">
+          <input formControlName="tel" type = "text">
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <button [disabled]="form.invalid" (click)="onSubmit()">保存</button>
+  </div>
+</form>
