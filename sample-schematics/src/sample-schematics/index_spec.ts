@@ -19,6 +19,8 @@ describe('sample-schematics', () => {
       '/test.component.html',
       '/test.component.scss',
       '/test.component.ts',
+      '/test.service.ts',
+      '/test.ts',
     ]);
 
     // assert file contents
