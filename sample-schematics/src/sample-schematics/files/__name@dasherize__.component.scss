@@ -1,0 +1,13 @@
+.form-table {
+  margin-bottom: 10px;
+  
+  &__row {
+    display: table-row;
+  
+    & > * {
+      display: table-cell;
+      padding: 5px;
+    }
+  }
+}
+  

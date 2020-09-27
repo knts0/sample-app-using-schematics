@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+  <div class="form-table">
+    <div class="form-table__row">
+      <div class="label">sample</div>
+      <div class="content">
+        <input formControlName="sample" type="text">
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <button [disabled]="form.invalid" (click)="onSubmit()">送信</button>
+  </div>
+</form>
