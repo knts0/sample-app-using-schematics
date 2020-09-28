@@ -13,7 +13,7 @@ export class <%= classify(name) %>Component implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private <%= name %>Service: <%= classify(name) %>Service,
+    private <%= camelize(name) %>Service: <%= classify(name) %>Service,
   ) { }
 
   ngOnInit(): void {
