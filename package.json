@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "schematics.form": "schematics ./sample-schematics/src/collection.json:sample-schematics --dry-run=false"
   },
   "private": true,
   "dependencies": {
